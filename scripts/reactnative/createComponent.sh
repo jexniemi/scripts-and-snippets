@@ -11,13 +11,11 @@ fi
 # Select output directory
 outputDir="./src/components/$componentName"
 read -p "Component directory: (default: "./src/components/$componentName"): " userChosenDir
-if [ -z "$userChosenDir" ]
+if [ ! -z "$userChosenDir" ]
 then
-  echo Using path $outputDir
-else 
   outputDir="$userChosenDir/$componentName"
-  echo Using path "$outputDir"
 fi
+echo Using path $outputDir
 echo ""
 
 # Make output directory
