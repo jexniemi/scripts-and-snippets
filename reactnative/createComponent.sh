@@ -37,9 +37,11 @@ mkdir -p $outputDir
 # Create component fille
 componentFilePath="$outputDir/$componentName.tsx"
 echo "import React from 'react'
-import { "$componentName"Wrapper } from './$componentName.styles.ts'
+import {"$componentName"Wrapper} from './$componentName.styles.ts'
 
-export default function $componentName() {
+interface "$componentName"Props {}
+
+export default function $componentName({}: "$componentName"Props) {
   return (
     <"$componentName"Wrapper>
     </"$componentName"Wrapper>
