@@ -37,7 +37,7 @@ mkdir -p $outputDir
 # Create component fille
 componentFilePath="$outputDir/$componentName.tsx"
 echo "import React from 'react'
-import {"$componentName"Wrapper} from './$componentName.styles.ts'
+import {"$componentName"Wrapper} from './$componentName.styles.tsx'
 
 interface "$componentName"Props {}
 
@@ -51,7 +51,7 @@ export default function $componentName({}: "$componentName"Props) {
 echo "Created: $componentFilePath"
 
 # Create styles file
-stylesFilePath="$outputDir/$componentName.styles.ts"
+stylesFilePath="$outputDir/$componentName.styles.tsx"
 echo "import styled from 'styled-components'
 import { View } from 'react-native'
 
